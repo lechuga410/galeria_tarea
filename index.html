@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de inicio de seccion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm" action="">
+        <div class="input-grupo">
+          <label for="Usuario">Usuario</label>
+          <input type="text" id="Usuario" name="Usuario" placeholder="minimo 4 letras sin numeros" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{4,}">
+        </div>
+
+        <div class="input-grupo">
+          <label for="Contraseña">Contraseña</label>
+          <input type="password" id="Contraseña" name="Contraseña" required>
+        </div>
+
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+      <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+    </section>
+  </main>
+  
+<script src="index.js"></script>
+</body>
+</html>

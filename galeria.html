@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Moderna</title>
+  <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+ 
+  <main class="container">
+    <header class="encabezado">
+      <h1 class="titulo">Galería</h1>
+      <div class="usuario-opciones">
+        <span class="usuario" id="usuarioNombre">👨🏻‍💼</span>
+        <input type="file" id="subirImagen" accept="image/*">
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+      </div>
+    </header>
+   
+    <section class="controles">
+      <button onclick="cargarMas()">Cargar más</button>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <!-- Imágenes serán cargadas por JS -->
+    </section>
+
+    <div id="modal" class="modal">
+      <span class="cerrar">&times;</span>
+      <img class="modal-contenido" id="imgGrande">
+      <div id="caption"></div>
+    </div>
+
+    <footer class="footer">desarrollos-sebastian</footer>
+  </main>
+
+  <script src="galeria.js"></script>
+</body>
+</html>
